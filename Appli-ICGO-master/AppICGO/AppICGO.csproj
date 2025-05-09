@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD6A9680-D8C5-403F-8055-D5215F1EADEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppICGO</RootNamespace>
+    <AssemblyName>AppICGO</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=9.0.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector NET 9.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAffecterCompetence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAffecterCompetence.Designer.cs">
+      <DependentUpon>frmAffecterCompetence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAffecterModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAffecterModule.Designer.cs">
+      <DependentUpon>frmAffecterModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgence.Designer.cs">
+      <DependentUpon>frmAgence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCompetence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCompetence.Designer.cs">
+      <DependentUpon>frmCompetence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmerInscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmerInscription.Designer.cs">
+      <DependentUpon>frmConfirmerInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnexion.Designer.cs">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormateur.Designer.cs">
+      <DependentUpon>frmFormateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInscription.Designer.cs">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModule.Designer.cs">
+      <DependentUpon>frmModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSessionStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSessionStage.Designer.cs">
+      <DependentUpon>frmSessionStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStage.Designer.cs">
+      <DependentUpon>frmStage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStagiaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStagiaire.Designer.cs">
+      <DependentUpon>frmStagiaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAffecterCompetence.resx">
+      <DependentUpon>frmAffecterCompetence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAffecterModule.resx">
+      <DependentUpon>frmAffecterModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgence.resx">
+      <DependentUpon>frmAgence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCompetence.resx">
+      <DependentUpon>frmCompetence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmerInscription.resx">
+      <DependentUpon>frmConfirmerInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnexion.resx">
+      <DependentUpon>frmConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormateur.resx">
+      <DependentUpon>frmFormateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInscription.resx">
+      <DependentUpon>frmInscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModule.resx">
+      <DependentUpon>frmModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSessionStage.resx">
+      <DependentUpon>frmSessionStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStage.resx">
+      <DependentUpon>frmStage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStagiaire.resx">
+      <DependentUpon>frmStagiaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BiblioDAOICGO\BiblioDAOICGO.csproj">
+      <Project>{08b01cef-0b1d-4921-86d5-04f21f893719}</Project>
+      <Name>BiblioDAOICGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BiblioManager\BiblioManager.csproj">
+      <Project>{95cbec4d-9be5-4f4d-a211-926727e269df}</Project>
+      <Name>BiblioManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BiblioMetierICGO\BiblioMetierICGO.csproj">
+      <Project>{794be87b-5de6-45e4-aade-26fa1bbc692a}</Project>
+      <Name>BiblioMetierICGO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BiblioSupport\BiblioSupport.csproj">
+      <Project>{dff7f1eb-2d9b-4b0a-b777-7744e2960e26}</Project>
+      <Name>BiblioSupport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
